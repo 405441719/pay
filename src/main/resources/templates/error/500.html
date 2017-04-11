@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Error</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<style type="text/css">
+.errorcon{background:url(/images/500a.jpg) center top no-repeat;width:960px;height:500px;margin:100px auto;text-align: center;}
+.errorcon a{width:220px;height:60px;text-align: center;line-height: 60px; background: #9dbad0;color: #fff;font-size: 24px;text-decoration: none;border-radius: 5px;margin-top: 400px; display: block;float: left;margin-top: 500px;margin-left: 300px;}
+</style>
+</head>
+<body>
+	<div class="errorcon">
+	<a href="javascript:void(0)" onclick="location.reload();">刷新</a>
+
+	</div>
+     <div>
+		 <span th:text="${timestamp}"></span>
+		 <span th:text="${message}"></span>
+	 </div>
+</body>
+</html>
